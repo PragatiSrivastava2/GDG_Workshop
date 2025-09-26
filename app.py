@@ -15,7 +15,7 @@ load_dotenv()  # This loads variables from .env into environment
 
 api_key = os.getenv("GOOGLE_API_KEY")
 # print(api_key)
-genai.configure(api_key="") 
+genai.configure(api_key=) 
 model = genai.GenerativeModel("gemini-2.0-flash-lite")
 
 model_ann = tf.keras.models.load_model('model.h5')
